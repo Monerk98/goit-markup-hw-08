@@ -1,0 +1,43 @@
+
+
+.menu
+{
+    display: flex;
+    align-items: center;
+
+    &__item:not(:last-child)
+{
+    margin-right: 50px;
+}
+    &__mail
+    {
+        margin-right: 50px;
+    }
+}
+
+.studio__nav
+{
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $primary-color;
+    font-weight: $fw-medium;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms $cubik;
+
+   &:hover,
+   &:focus
+{
+    color: $secondary-color;
+}
+}
+
+
+
+.list{
+    list-style: none;
+    text-decoration: none;
+}

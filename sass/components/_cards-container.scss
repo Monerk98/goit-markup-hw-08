@@ -1,0 +1,41 @@
+.flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards-lay{
+    display: block;
+    &:hover .overlay-text,
+    &:focus .overlay-text
+{
+    transform: translateY(0);
+}
+}
+
+
+.flex-element
+{
+    flex-basis: calc((100% - 30px * 3 ) /3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    transition: box-shadow 250ms $cubik;
+    /* max-height: 404px; */
+    &:hover,
+    &:focus
+{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+     0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+    &:nth-child(3n)
+{
+    margin-right: 0;
+}
+    &:nth-last-child(-n+3)
+{
+    margin-bottom: 0;
+}
+}
+
+
+

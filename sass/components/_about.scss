@@ -1,0 +1,45 @@
+.title__main
+{
+    padding-bottom: 94px;
+    display: flex;
+    &__new
+{
+    color: $primary-color;
+    font-weight: $fw-bold;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+    text-align: center;
+}
+}
+.program
+{
+    display: flex;
+
+    &__about__pics:not(:last-child)
+{
+    margin-right: 30px;
+}
+    &__about__pics
+    {
+        position: relative;
+    }
+}
+.block-pics
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 27px 82px;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+}
+
+.pics-description
+{
+    font-weight: $fw-bold;
+    line-height: 1.17;
+    color: $front-color;
+    text-transform: uppercase;
+}
+

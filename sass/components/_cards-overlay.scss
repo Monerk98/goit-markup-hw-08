@@ -1,0 +1,23 @@
+.overlay
+{
+    position: relative;
+    overflow: hidden;
+    
+    &-text
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 250ms $cubik;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: $front-color;
+    background-color: $secondary-color;
+}
+}
+

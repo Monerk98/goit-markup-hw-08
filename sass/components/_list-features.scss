@@ -1,0 +1,43 @@
+.list__features
+{
+    display: flex;
+    align-items: center;
+    .list__about
+    {
+        max-width: 270px;
+    }
+     .list__about:not(:last-child)
+{
+    margin-right: 30px;
+}
+
+}
+
+
+.list__picture
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: $background-btn-team;
+    margin-bottom: 30px;
+}
+.list__title
+{
+    margin-bottom: 10px;
+    color: $primary-color;
+    font-weight: $fw-bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.list__desc
+{
+    font-size: 14px;
+    line-height: 1.71;
+    color: $paragraph-color;
+    margin:0;
+    padding: 0;
+}

@@ -1,0 +1,69 @@
+.list .current
+{
+    color: $secondary-color;
+
+    &::after
+    {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: '';
+        width: 100%;
+        height: 4px;
+        background: $secondary-color;
+        border-radius: 2px;
+    }
+}
+
+.mail
+{
+    display: flex;
+    align-items: center;
+    color: $paragraph-color;
+    font-weight: $fw-medium;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms $cubik;
+    &:hover,
+    &:focus
+{
+    color: $secondary-color;
+}
+    &:hover .icon-header,
+    &:focus .icon-header
+    {
+        fill: currentColor;
+    }
+}
+.phone
+{
+    display: flex;
+    align-items: center;
+    color: $paragraph-color;
+    font-weight: $fw-medium;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms $cubik;
+    &:hover,
+    &:focus
+{
+    color: $secondary-color;
+}
+    &:hover .icon-header,
+    &:focus .icon-header
+    {
+        fill: currentColor;
+    }
+}
+.icon-header
+{
+    margin-right: 10px;
+    fill: currentColor;
+}
+

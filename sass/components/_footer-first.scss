@@ -1,0 +1,51 @@
+
+.logo-footer
+{
+    display: block;
+    margin-bottom: 30px;
+}
+.address
+{
+    
+    font-style: inherit;
+
+    &__town
+{
+    color: $front-color;
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 9px;
+}
+}
+
+.footer-list
+{
+    margin-bottom: 9px;
+}
+/* .info{
+    display: block;
+    margin-bottom: 9px;
+} */
+.info,
+.info-phone
+{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    transition: color 250ms $cubik;
+    &:hover,
+    &:focus
+{
+    color: $secondary-color;
+}
+    &:hover,
+    &:focus
+{
+    color: $secondary-color;
+}
+}
+
+.logo-studio-footer
+{
+    color: $front-color;
+}

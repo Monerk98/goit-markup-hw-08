@@ -1,0 +1,48 @@
+.join
+{
+  margin-left: 60px;
+
+  &__title
+{
+    color: $front-color;
+    text-transform: uppercase;
+    font-weight: $fw-bold;
+    font-size: 14px;
+    line-height: 1.17;
+    margin-bottom: 20px;
+}  
+}
+
+.join__main
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.join__undermain:not(:last-child)
+{
+    margin-right: 10px;
+}
+
+// ========
+.join__link
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms $cubik;
+    &:hover,
+    &:focus
+{
+    background-color: $secondary-color;
+}
+
+}
+.join__svg
+{
+    fill: $front-color;
+}
