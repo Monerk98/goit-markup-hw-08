@@ -47,26 +47,29 @@ body {
   padding-bottom: 94px;
 }
 
-.header {
-  border-bottom: 1px solid #ECECEC;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header__nav__container {
-  display: flex;
-  align-items: center;
-}
-
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .menu {
@@ -78,8 +81,53 @@ body {
   margin-right: 50px;
 }
 
-.menu__mail {
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu__contact {
+  display: flex;
+  align-items: center;
+}
+
+.menu__contact__mail {
   margin-right: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu__contact {
+    margin-left: 84px;
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .menu__contact__mail {
+    padding: 0;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .menu__contact .mail, .menu__contact .phone {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__contact {
+    display: flex;
+    align-items: center;
+  }
+  .menu__contact__mail {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
 }
 
 .studio__nav {
@@ -118,6 +166,36 @@ body {
 
 .logo-link-studio {
   color: #212121;
+}
+
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__button {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 767px) {
+  .header__button {
+    display: none;
+  }
 }
 
 .list .current {
@@ -225,16 +303,32 @@ body {
 }
 
 .list__features {
-  display: flex;
+  display: block;
   align-items: center;
+  justify-content: center;
 }
 
-.list__features .list__about {
+@media screen and (min-width: 768px) {
+  .list__features {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.list__about {
   max-width: 270px;
 }
 
-.list__features .list__about:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .list__about {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list__about {
+    flex-basis: calc((100% - 30px / 2)/2);
+  }
 }
 
 .list__picture {
@@ -377,19 +471,18 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-link:hover,
-.icon-link:focus {
+.icon-link:hover, .icon-link:focus {
   background-color: #2196F3;
-}
-
-.icon-svg {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #AFB1B8;
 }
 
 .icon-link:hover .icon-svg,
 .icon-link:focus .icon-svg {
   fill: #FFFFFF;
+}
+
+.icon-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #AFB1B8;
 }
 
 .clients__text {
@@ -781,14 +874,14 @@ body {
   flex-direction: column;
 }
 
-.modal-form .modal-form-field {
+.modal-form-field {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
 }
 
-.modal-form .modal-form-field:not(:first-child) {
+.modal-form-field:not(:first-child) {
   margin-top: 28px;
 }
 
@@ -870,8 +963,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   fill: #2196F3;
   outline: none;
 }
@@ -911,10 +1003,6 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-checkbox:checked ~ .checkbox-text
-{
-    color: tomato;
-} */
 .modal-checkbox:focus + .check-svg {
   border-color: #2196F3;
 }
@@ -928,6 +1016,10 @@ body {
   /* background-color: var(--secondary-color); */
 }
 
+/* .modal-checkbox:checked ~ .checkbox-text
+{
+    color: tomato;
+} */
 .checkbox-text {
   font-size: 14px;
   line-height: 1.71;
@@ -951,8 +1043,7 @@ body {
   margin: 0 auto;
 }
 
-.submit-btn:hover,
-.submit-btn:focus {
+.submit-btn:hover, .submit-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,18 +1,29 @@
 .list__features
 {
-    display: flex;
+    display: block;
     align-items: center;
-    .list__about
-    {
-        max-width: 270px;
-    }
-     .list__about:not(:last-child)
+    justify-content: center;
+    @media screen and (min-width:768px)
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+}
+.list__about
 {
-    margin-right: 30px;
+    max-width: 270px;
+    @media screen and (max-width:767px)
+    {
+        width: 100%;
+    }
+    @media screen and (min-width:768px)  {
+            flex-basis: calc((100% - 30px / 2)/2) ;
+    }
 }
-
+.list__about:not(:last-child)
+{
+    // margin-right: 30px;
 }
-
 
 .list__picture
 {

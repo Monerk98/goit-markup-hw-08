@@ -9,11 +9,65 @@
 {
     margin-right: 50px;
 }
+@media  screen and (max-width: 767px){
+    &{
+        display: none;
+    }
+}
+}
+
+
+.menu__contact
+{
+    display: flex;
+    align-items: center;
+    // margin-left: auto;
+
+
     &__mail
     {
         margin-right: 50px;
     }
+    @media  screen and (max-width: 767px){
+        &{
+            display: none;
+        }
+    }
+    @media screen and (min-width:768px)
+    {
+        &{
+            
+            margin-left: 84px;
+            display: block; 
+            padding-top: 21px;
+            padding-bottom: 21px;
+         }
+         &__mail{
+             padding: 0;
+             margin-bottom: 10px;
+             margin-right: 0;
+         }
+         .mail, .phone{
+             padding: 0;
+         }
+    }
+    @media screen and (min-width:1200px)
+    {
+        &{
+            display: flex;
+            align-items: center;
+         }
+         &__mail{
+            margin-bottom: 0;
+            margin-right: 50px;
+        }
+        //  .mail, .phone{
+        //     padding-top: 32px;
+        //     padding-bottom: 32px;
+        //  }
+    }
 }
+
 
 .studio__nav
 {
@@ -34,9 +88,6 @@
     color: $secondary-color;
 }
 }
-
-
-
 .list{
     list-style: none;
     text-decoration: none;
