@@ -15,8 +15,9 @@
     <!-- Шапка -->
     <header class="header">
         <div class="container header__container">
+            <a class="logo" href="#" style="text-decoration: none;"><span class="logo-link">Web</span><span class="logo-link-studio">Studio</span></a>
         <nav class="header__nav__container">
-        <a class="logo" href="#" style="text-decoration: none;"><span class="logo-link">Web</span><span class="logo-link-studio">Studio</span></a>
+       
             <ul class="list menu">
                 <li class="menu__item">
                     <a href="#" class="studio__nav current list">Студия</a>
@@ -28,13 +29,7 @@
                     <a href="#" class="studio__nav list">Контакты</a>
                 </li>
             </ul>
-
         </nav>
-    <button type="button" class="header__button">
-        <svg class="header__icon-button" width="24" height="24">
-            <use href="./images/icons.svg#icon-menu"></use>
-        </svg>
-    </button>
         <ul class="list menu__contact ">
         <li class="menu__contact__mail">
             <a class="mail list" href="mailto:info@devstudio.com">
@@ -49,7 +44,69 @@
              </svg>
             +38 096 111 11 11</a></li>
         </ul>
+        <!-- BUTTON BURGER -->
+        <button type="button" class="header__button" data-menu-button>
+            <svg class="header__icon-button" width="24" height="24">
+                <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
     </div>
+    <!-- MOBILE MENU -->
+    <div class="mobile__menu " data-menu>
+        <div class="container mobile__menu__container">
+            <button type="button" class="mobile__menu__close" data-menu-close>
+                <svg class="mobile__cross">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile__menu__nav list">
+                <li class="mobile__title">
+                    <a href="#" class="mobile__menu__link mob__current list">
+                        Студия
+                </a>
+                </li>
+                <li class="mobile__title">
+                    <a href="./portfolio.html" class="mobile__menu__link list">
+                        Портфолио
+                </a>
+                </li>
+                <li class="mobile__title contact__title">
+                    <a href="" class="mobile__menu__link   list">
+                        Контакты
+                </a>
+                </li>
+            </ul>
+            <ul class="site__contacts list"> 
+                <li class="site__mail">
+                    <a href="" class="site__link list">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="site__mail">
+                    <a href="" class="site__link list">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <ul class="network__list list">
+                <li class="network__items">
+                    <a href="" class="network__social list">
+                        Instagram
+                    </a></li>
+                <li class="network__items">
+                    <a href="" class="network__social list">
+                        Twitter
+                    </a></li>
+                <li class="network__items">
+                    <a href="" class="network__social list">
+                        Facebook
+                    </a></li>
+                <li class="network__items">
+                    <a href="" class="network__social list">
+                        LinkedIn
+                    </a></li>
+            </ul> 
+        </div>
     </div>
     </header>
     <!-- Главная -->
@@ -103,7 +160,7 @@
             </ul>
         </div>
         </section>
-        <section class="title__main">
+        <!-- <section class="title__main">
             <div class="container">
             <h2 class="title__main__new">Чем мы занимаемся</h2>
             <ul class="list program">
@@ -334,7 +391,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main> 
     <!-- Футер -->
     <!-- <footer class="footer">
@@ -394,7 +451,8 @@
             </form>
         </div>
     </div>
-    </footer>
+    </footer> -->
+    <!-- Modal page -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
@@ -448,6 +506,7 @@
             </button>
         </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

@@ -20,12 +20,12 @@
 {
     display: flex;
     align-items: center;
-    // margin-left: auto;
+    margin-left: auto;
 
 
     &__mail
     {
-        margin-right: 50px;
+        margin-right: 30px;
     }
     @media  screen and (max-width: 767px){
         &{

@@ -2,6 +2,18 @@
 {
     display: flex;
     flex-direction: column;
+    @media screen and (max-width:1199px)
+    {
+        &{
+            max-width: 370px;
+        }
+    }
+    @media screen and (min-width:1200px)
+    {
+        &{
+            min-width: 448px;
+        }
+    }
     &-field
 {
     font-size: 12px;
@@ -11,7 +23,7 @@
 }
   &-field:not(:first-child)
 {
-    margin-top: 28px;
+    margin-top: 10px;
 }
 }
 .svg-modal-input
@@ -115,7 +127,7 @@
     align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
-    margin-left: 12px;
+    // margin-left: 12px;
 }
 /* .modal-checkbox-policy::before
 {
@@ -125,8 +137,8 @@
 } */
 .check-svg
 {
-    border-radius:2px;
-    width: 15px;
+    border-radius: 4px;
+    width: 16px;
     height: 15px;
     display: inline-block;
     border: 2px solid $primary-color;
@@ -142,9 +154,10 @@
     &:checked + .check-svg
     {
         background-image: url(../images/checked.svg);
-        background-size: 15px 15px;
-        background-position: contain;
+        background-size: contain;
+        background-position: center;
         background-origin: border-box;
+        background-repeat: no-repeat;
         border: transparent;
         /* background-color: var(--secondary-color); */
     }
@@ -160,6 +173,13 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $paragraph-color;
+    @media screen and (max-width:1199px)
+    {
+        &{
+            font-size: 12px;
+            line-height: 1.16;
+        }
+    }
 }
 .submit-btn
 {

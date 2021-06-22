@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 
 }
 .header__nav__container
@@ -19,14 +20,23 @@
 }
 .header__button
 {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     display: block;
     background: transparent;
     border:none;
     padding: 0;
+    line-height: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    &:focus,
+    &:hover
+    {
+        fill: $secondary-color;
+    }
 
-    @media screen and (min-width: 767px)
+    @media screen and (min-width: 768px)
     {
     &{
             display: none;
