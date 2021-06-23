@@ -11,24 +11,7 @@
 {
     color: $secondary-color;
 }
-.mobile__menu__link
-{
-    display: block;
-    font-size: 40px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    margin-bottom: 32px;
-    font-weight: $fw-medium;
-    &:focus,
-    &:hover
-{
-    color: $secondary-color
-}
-}
-.contact__title
-{
-    margin-bottom: 0;
-}
+
 .mobile__menu
 {
     opacity: 0;
@@ -81,11 +64,82 @@
 
 }
 .mobile__cross{
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
 }
 .mobile__menu__close:hover,
 .mobile__menu__close:focus
 {
     fill: $secondary-color;
+}
+// ========Студия, Портфолио, КОнтакты
+.mobile__menu__link
+{
+    display: block;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $primary-color;
+    font-weight: $fw-medium;
+    &:focus,
+    &:hover
+{
+    color: $secondary-color
+}
+}
+.mobile__title:not(:last-child)
+{
+    margin-bottom: 32px;
+}
+// ============== Phone========
+.site__contacts
+{
+    margin-top: 302px;
+}
+.site__mail:not(:last-child)
+{
+    margin-bottom: 32px;
+}
+.site__link
+{
+    display: block;
+    // font-size: 34px;
+    // line-height: 1.17;
+    // letter-spacing: 0.02em;
+    color:$paragraph-color;
+    font-weight: $fw-medium;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    
+}
+.site__link:hover,
+.site__link:focus
+{
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $secondary-color
+}
+// ========Instagram, Twitter,Facebook,LinkedIn======
+.network__list
+{
+    margin-top: 64px;
+    display: flex;
+}
+.network__items
+{
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);;
+}
+.network__items:not(:first-child)
+{
+    padding-left: 10px;
+}
+.network__social
+{
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $secondary-color;
 }

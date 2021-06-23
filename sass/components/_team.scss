@@ -1,6 +1,11 @@
 .team
 {
     background-color: $background-btn-team;
+    @media screen and (max-width:1199px)
+    {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     &__new__title
 {
     color: $primary-color;
@@ -9,12 +14,27 @@
     line-height: 1.16;
     margin-bottom: 50px;
     text-align: center;  
-}
-    &__main
+    @media screen and (max-width:1199px)
     {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -30px;
+        font-size: 28px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
     }
 }
+}
+.team__main
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    @media screen and (min-width:1200px)
+    {
+            display: flex;
+            flex-wrap: nowrap;
+            text-align: center;
+            max-width: 270px;
+        }
+    }
+
 

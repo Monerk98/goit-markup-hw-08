@@ -130,7 +130,7 @@
                 <h3 class="list__title">Внимание к деталям</h3>
                 <p class="list__desc">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-                <li class="list__about">
+                <li class="list__about about-space">
                     <div class="list__picture">
                         <svg class="icon-under-hero" width="70" height="70">
                             <use href="./images/icons.svg#icon-clock"></use>
@@ -160,24 +160,33 @@
             </ul>
         </div>
         </section>
-        <!-- <section class="title__main">
+        <section class="title__main">
             <div class="container">
             <h2 class="title__main__new">Чем мы занимаемся</h2>
             <ul class="list program">
             <li class="program__about__pics">
-                <img src="./images/img1.jpg" alt="Программирование" width="370">
+                <picture>
+                <source srcset="./images/about/laptop@1x.jpg 1x, ./images/about/laptop@2x.jpg 2x">
+                <img src="#" alt="Программирование"  >
+                </picture>
                 <div class="block-pics">
                     <p class="pics-description">Десктопные приложения</p>
                 </div>
             </li>
             <li class="program__about__pics">
-                <img src="./images/img2.jpg" alt="Адаптив" width="370">
+                <picture>
+                    <source srcset="./images/about/tablet@1x.jpg 1x, ./images/about/tablet@2x.jpg 2x">
+                <img src="#" alt="Адаптив">
+            </picture>
                 <div class="block-pics">
                     <p class="pics-description">Мобильные приложения</p>
                 </div>
             </li>
             <li class="program__about__pics">
-                <img src="./images/img3.jpg" alt="Графика" width="370">
+                <picture>
+                    <source srcset="./images/about/phone@1x.jpg 1x, ./images/about/phone@2x.jpg 2x">
+                <img src="#" alt="Графика" >
+            </picture>
                 <div class="block-pics">
                     <p class="pics-description">Дизайнерские решения</p>
                 </div>
@@ -190,7 +199,12 @@
             <h2 class="team__new__title">Наша Команда</h2>
             <ul class="list team__main">
                <li class="team__pics">
-                <img src="./images/img4.jpg" alt="Игорь Демьяненко" width="270" class="new-team">
+                   <picture>
+                    <source srcset="./images/team/igor/igor_desktop@1x.jpg 1x, ./images./team/igor/igor_desktop@2x.jpg 2x" media="(min-width:1200px)">
+                    <source srcset="./images/team/igor/igor_tablet@1x.jpg 1x, ./images./team/igor/igor_tablet@2x.jpg 2x" media="(min-width:768px)">
+                    <source srcset="./images/team/igor/igor_mobile@1x.jpg 1x, ./images./team/igor/igor_mobile@2x.jpg 2x" media="(max-width:767px)">
+                <img src="./images/igor@1x.jpg" alt="Игорь Демьяненко" class="new-team">
+            </picture>
                 <div class="team__pics__list">
                 <h3 class="team__pics__name">Игорь Демьяненко</h3>
                 <p class="new-product">Product Designer</p>
@@ -228,7 +242,12 @@
             </li>
 
                 <li class="team__pics">
-                <img src="./images/img5.jpg" alt="Ольга Репина" width="270" class="new-team">
+                    <picture>
+                        <source srcset="./images/team/olga/olga_desktop@1x.jpg 1x, ./images./team/olga/olga_desktop@2x.jpg 2x" media="(min-width:1200px)">
+                        <source srcset="./images/team/olga/olga_tablet@1x.jpg 1x, ./images./team/olga/olga_tablet@2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./images/team/olga/olga_phone@1x.jpg 1x, ./images./team/olga/olga_phone@2x.jpg 2x" media="(max-width:767px)">
+                <img src="./images/img5.jpg" alt="Ольга Репина"  class="new-team">
+            </picture>
                 <div class="team__pics__list">
                 <h3 class="team__pics__name"> Ольга Репина</h3>
                 <p class="new-product">Frontend Developer</p>
@@ -266,7 +285,12 @@
             </li>
 
                 <li class="team__pics">
-                <img src="./images/img6.jpg" alt="Николай Тарасов" width="270" class="new-team">
+                    <picture>
+                        <source srcset="./images/team/kolya/kolya_desktop@1x.jpg 1x, ./images./team/kolya/kolya_desktop@2x.jpg 2x" media="(min-width:1200px)">
+                        <source srcset="./images/team/kolya/kolya_tablet@1x.jpg 1x, ./images./team/kolya/kolya_tablet@2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./images/team/kolya/kolya_phone@1x.jpg 1x, ./images./team/kolya/kolya_phone@2x.jpg 2x" media="(max-width:767px)">
+                <img src="./images/img6.jpg" alt="Николай Тарасов"  class="new-team">
+            </picture>
                 <div class="team__pics__list">
                 <h3 class="team__pics__name">Николай Тарасов</h3>
                 <p class="new-product">Marketing</p>
@@ -302,9 +326,13 @@
                 </ul>
             </div>
             </li>
-
                 <li class="team__pics">
-                <img src="./images/img7.jpg" alt="Михаил Ермаков" width="270" class="new-team">
+                    <picture>
+                        <source srcset="./images/team/misha/misha_desktop@1x.jpg 1x, ./images./team/misha/misha_desktop@2x.jpg 2x" media="(min-width:1200px)">
+                        <source srcset="./images/team/misha/misha_tablet@1x.jpg 1x, ./images./team/misha/misha_tablet@2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./images/team/misha/misha_phone@1x.jpg 1x, ./images./team/misha/misha_phone@2x.jpg 2x" media="(max-width:767px)">
+                <img src="./images/img7.jpg" alt="Михаил Ермаков"  class="new-team">
+            </picture>
                 <div class="team__pics__list">
                 <h3 class="team__pics__name">Михаил Ермаков</h3>
                 <p class="new-product">UI Designer</p>
@@ -343,7 +371,7 @@
             </ul>
         </div>
         </section>
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="clients__text">Постоянные клиенты</h2>
                 <ul class="clients list">

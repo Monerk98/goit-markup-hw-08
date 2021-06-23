@@ -2,6 +2,10 @@
 {
     padding-bottom: 94px;
     display: flex;
+    @media screen and (max-width:1199px)
+    {
+        display: none;
+    }
     &__new
 {
     color: $primary-color;
