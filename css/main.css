@@ -649,6 +649,12 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 767px) {
+  .list__title {
+    text-align: center;
+  }
+}
+
 .list__desc {
   font-size: 14px;
   line-height: 1.71;

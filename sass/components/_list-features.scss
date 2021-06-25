@@ -98,6 +98,11 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    @media screen and (max-width:767px)
+    {
+        text-align: center;
+    }
+
 }
 .list__desc
 {
