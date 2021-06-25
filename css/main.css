@@ -213,6 +213,7 @@ body {
 .network__list {
   margin-top: 64px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .network__items {
