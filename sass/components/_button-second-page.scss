@@ -10,7 +10,20 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-
+    @media screen and (min-width:768px) and (max-width:1199px)
+    {
+        margin-bottom: 30px;
+    }
+    @media screen and (max-width:767px)
+    {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+.button-title:not(:last-child):not(:nth-child(n+4))
+{
+    margin-bottom: 15px;
+}
 .button-title:not(:last-child)
 {
     margin-right: 8px;

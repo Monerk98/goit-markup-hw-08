@@ -81,6 +81,10 @@
     letter-spacing: 0.02em;
     color: $primary-color;
     font-weight: $fw-medium;
+    @media screen and (min-width:768px)
+    {
+        display: none;
+    }
     &:focus,
     &:hover
 {

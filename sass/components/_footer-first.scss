@@ -2,7 +2,30 @@
 .logo-footer
 {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    @media screen and (min-width:768px) and (max-width:1199px)
+    {
+        padding-top: 0;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px)
+{
+    .block
+    {
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width:767px)
+{
+    .block
+    {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+    }
 }
 .address
 {
