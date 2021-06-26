@@ -43,7 +43,7 @@
 }
 .mobile__menu.is-open
 {
-    background: transparent;
+    // background: transparent;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -53,7 +53,7 @@
 .mobile__menu__close
 {
     border: none;
-    background: transparent;
+    // background: transparent;
     padding: 0;
     width: 24px;
     height: 16px;
@@ -99,6 +99,18 @@
 .site__contacts
 {
     margin-top: 302px;
+    @media screen and(max-width:400px)
+    {
+        margin-top: 120px;
+    }
+    @media screen and (max-width: 320px)
+    {
+        margin-top: 90px;
+        &:not(:last-child)
+        {
+            padding-left: 10px;
+        }
+    }
 }
 .site__mail:not(:last-child)
 {
@@ -135,7 +147,14 @@
 .network__items
 {
     padding-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    @media screen and (max-width: 320px)
+    {
+        &:not(:last-child)
+        {
+            padding-left: 10px;
+        }
+    }
 }
 .network__items:not(:first-child)
 {
