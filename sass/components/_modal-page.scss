@@ -46,4 +46,9 @@
             max-width: 370px;
         }
     }
+    @media screen and (max-width:320px)
+    {
+        max-width: 210px;
+        margin: 0 auto;
+    }
 }
